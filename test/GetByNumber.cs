@@ -25,7 +25,7 @@ namespace test
             var stringResponse = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<NumberResponse>(stringResponse);
 
-            Assert.Equal(43, result.Number);
+            Assert.Equal(42, result.Number);
             Assert.NotEmpty(result.Text);
         }
     }
