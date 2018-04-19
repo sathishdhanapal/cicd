@@ -18,6 +18,8 @@ namespace test
             var server = new TestServer(builder);
             var client = server.CreateClient();
 
+           
+
             // client always expects json results
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));

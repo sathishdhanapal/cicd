@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using api.Dto;
@@ -10,10 +11,9 @@ namespace test
     public class GetByNumber : ApiControllerTestBase
     {
         private readonly HttpClient _client;
-
         public GetByNumber()
         {
-            _client = base.GetClient();
+            _client = base.GetClient();            
         }
 
         [Theory]
